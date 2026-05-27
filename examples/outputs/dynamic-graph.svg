@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1479" height="732" viewBox="0 0 1479 732">
+<defs>
+
+<linearGradient id="blueBar" x1="0" x2="0" y1="0" y2="1">
+  <stop offset="0" stop-color="#43a3d9"/>
+  <stop offset="1" stop-color="#ffffff"/>
+</linearGradient>
+<linearGradient id="orangeBar" x1="0" x2="0" y1="0" y2="1">
+  <stop offset="0" stop-color="#fff200"/>
+  <stop offset="1" stop-color="#d86c1d"/>
+</linearGradient>
+<linearGradient id="mixBar" x1="0" x2="0" y1="0" y2="1">
+  <stop offset="0" stop-color="#20a6d9"/>
+  <stop offset="0.5" stop-color="#fff200"/>
+  <stop offset="1" stop-color="#c96a22"/>
+</linearGradient>
+
+</defs>
+<rect width="1479" height="732" fill="#ffffff"/>
+
+
+<g id="-b-state-module">
+<rect x="52" y="28" width="456" height="330" rx="0" ry="0" fill="none" stroke="#1f3b68" stroke-width="4" stroke-dasharray="22 8 4 8"/>
+<text x="488" y="342" font-family="Times New Roman" font-size="30" font-weight="400" fill="#111" text-anchor="end">(b) State Module</text>
+</g>
+
+<g id="-c-dt-mp-module">
+<rect x="568" y="28" width="858" height="330" rx="0" ry="0" fill="none" stroke="#1f3b68" stroke-width="4" stroke-dasharray="22 8 4 8"/>
+<text x="1406" y="342" font-family="Times New Roman" font-size="30" font-weight="400" fill="#111" text-anchor="end">(c) DT-MP Module</text>
+</g>
+
+<g id="-a-dynamic-graph">
+<rect x="52" y="401" width="305" height="323" rx="0" ry="0" fill="none" stroke="#1f3b68" stroke-width="4" stroke-dasharray="22 8 4 8"/>
+<text x="337" y="708" font-family="Times New Roman" font-size="30" font-weight="400" fill="#111" text-anchor="end">(a) Dynamic Graph</text>
+</g>
+
+<g id="-d-application">
+<rect x="401" y="401" width="438" height="323" rx="0" ry="0" fill="none" stroke="#1f3b68" stroke-width="4" stroke-dasharray="22 8 4 8"/>
+<text x="819" y="708" font-family="Times New Roman" font-size="30" font-weight="400" fill="#111" text-anchor="end">(d) Application</text>
+</g>
+
+<g id="-e-parameter-space">
+<rect x="885" y="401" width="541" height="323" rx="0" ry="0" fill="none" stroke="#1f3b68" stroke-width="4" stroke-dasharray="22 8 4 8"/>
+<text x="1406" y="708" font-family="Times New Roman" font-size="30" font-weight="400" fill="#111" text-anchor="end">(e) Parameter Space</text>
+</g>
+
+<g id="state-module">
+<rect x="64" y="58" width="116" height="212" rx="16" ry="16" fill="#f9fff5" stroke="#6aa84f" stroke-width="1.5"/>
+<rect x="75" y="74" width="96" height="29" rx="0" ry="0" fill="#d9e8ff" stroke="#9aa" stroke-width="0.8"/>
+<rect x="75" y="114" width="96" height="29" rx="0" ry="0" fill="#ffe0c2" stroke="#9aa" stroke-width="0.8"/>
+<rect x="75" y="154" width="96" height="29" rx="0" ry="0" fill="#d9c8e8" stroke="#9aa" stroke-width="0.8"/>
+<rect x="75" y="194" width="96" height="29" rx="0" ry="0" fill="#e5f3df" stroke="#9aa" stroke-width="0.8"/>
+<text x="122" y="103" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">m1(t1)</text>
+<text x="122" y="143" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">m3(t2)</text>
+<text x="122" y="183" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">m6(t2)</text>
+<text x="122" y="223" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">m4(t3)</text>
+<text x="122" y="263" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">...</text>
+<rect x="205" y="105" width="77" height="115" rx="8" ry="8" fill="#f1f1f1" stroke="#111" stroke-width="1.5"/>
+<text x="244" y="142" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">FFN</text>
+<text x="244" y="202" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">LN</text>
+<line x1="180" y1="163" x2="205" y2="163" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="205,163 192.21675483562768,168.708646342834 192.21675483562768,157.291353657166" fill="#111"/>
+<line x1="282" y1="163" x2="319" y2="163" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="319,163 306.2167548356277,168.708646342834 306.2167548356277,157.291353657166" fill="#111"/>
+<circle cx="327" cy="163" r="15" fill="#fff" stroke="#111" stroke-width="3"/>
+<line x1="327" y1="145" x2="327" y2="181" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+<line x1="309" y1="163" x2="345" y2="163" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+<line x1="327" y1="278" x2="327" y2="179" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="327,179 332.70864634283396,191.78324516437232 321.29135365716604,191.78324516437232" fill="#111"/>
+<line x1="327" y1="278" x2="395" y2="278" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+<line x1="395" y1="278" x2="395" y2="260" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+<rect x="379" y="58" width="116" height="202" rx="16" ry="16" fill="#f9fff5" stroke="#6aa84f" stroke-width="1.5"/>
+<rect x="390" y="74" width="96" height="29" rx="0" ry="0" fill="#d9e8ff" stroke="#9aa" stroke-width="0.8"/>
+<rect x="390" y="114" width="96" height="29" rx="0" ry="0" fill="#ffe0c2" stroke="#9aa" stroke-width="0.8"/>
+<rect x="390" y="154" width="96" height="29" rx="0" ry="0" fill="#d9c8e8" stroke="#9aa" stroke-width="0.8"/>
+<rect x="390" y="194" width="96" height="29" rx="0" ry="0" fill="#e5f3df" stroke="#9aa" stroke-width="0.8"/>
+<text x="437" y="103" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">s1(t1)</text>
+<text x="437" y="143" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">s3(t2)</text>
+<text x="437" y="183" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">s6(t2)</text>
+<text x="437" y="223" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">s4(t3)</text>
+<text x="437" y="263" font-family="Times New Roman" font-size="26" font-weight="400" fill="#111" text-anchor="middle">...</text>
+</g>
+
+<g id="dt-mp-module">
+<path d="M602 47 C710 40 762 54 835 46 S974 45 1033 46 L1040 188 C904 185 780 190 604 187 Z" fill="none" stroke="#4b9bd3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M602 194 C720 188 796 202 890 194 S965 194 1034 195 L1034 330 C904 325 770 333 602 330 Z" fill="none" stroke="#dd8f55" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+<line x1="638" y1="95" x2="683.1" y2="124.52" stroke="#111" stroke-width="2.46" stroke-linecap="round"/>
+<line x1="683.1" y1="124.52" x2="726.56" y2="103.2" stroke="#111" stroke-width="2.46" stroke-linecap="round"/>
+<line x1="683.1" y1="124.52" x2="708.52" y2="152.4" stroke="#111" stroke-width="2.46" stroke-linecap="round"/>
+<line x1="708.52" y1="152.4" x2="761" y2="148.3" stroke="#111" stroke-width="2.46" stroke-linecap="round"/>
+<circle cx="638" cy="95" r="11.479999999999999" fill="#fff" stroke="#111" stroke-width="1.64"/><text x="638" y="99.92" font-family="Arial" font-size="12.299999999999999" font-weight="400" fill="#111" text-anchor="middle">v1</text>
+<circle cx="683.1" cy="124.52" r="11.479999999999999" fill="#fff" stroke="#111" stroke-width="1.64"/><text x="683.1" y="129.44" font-family="Arial" font-size="12.299999999999999" font-weight="400" fill="#111" text-anchor="middle">v2</text>
+<circle cx="726.56" cy="103.2" r="11.479999999999999" fill="#fff" stroke="#111" stroke-width="1.64"/><text x="726.56" y="108.12" font-family="Arial" font-size="12.299999999999999" font-weight="400" fill="#111" text-anchor="middle">v3</text>
+<circle cx="708.52" cy="152.4" r="11.479999999999999" fill="#fff" stroke="#111" stroke-width="1.64"/><text x="708.52" y="157.32" font-family="Arial" font-size="12.299999999999999" font-weight="400" fill="#111" text-anchor="middle">v4</text>
+<circle cx="761" cy="148.3" r="11.479999999999999" fill="#fff" stroke="#111" stroke-width="1.64"/><text x="761" y="153.22" font-family="Arial" font-size="12.299999999999999" font-weight="400" fill="#111" text-anchor="middle">v5</text>
+
+<line x1="764" y1="105" x2="812" y2="105" stroke="#5976a6" stroke-width="3" stroke-linecap="round"/><polygon points="812,105 795.5643990743785,112.33968815507227 795.5643990743785,97.66031184492775" fill="#5976a6"/>
+<rect x="800" y="73" width="178" height="64" rx="10" ry="10" fill="#f4f4f4" stroke="#55a2d9" stroke-width="3"/>
+<text x="889" y="115" font-family="Times New Roman" font-size="27" font-weight="400" fill="#111" text-anchor="middle">Self-attention</text>
+<line x1="978" y1="105" x2="1016" y2="105" stroke="#0071bd" stroke-width="4" stroke-linecap="round"/><polygon points="1016,105 1003.2167548356277,110.70864634283399 1003.2167548356276,99.29135365716601" fill="#0071bd"/>
+<rect x="1025" y="73" width="29" height="63" rx="0" ry="0" fill="url(#blueBar)" stroke="#0f5988" stroke-width="1"/>
+<text x="1080" y="90" font-family="Times New Roman" font-size="28" font-weight="400" fill="#111" text-anchor="middle">Γ(t)</text>
+<text x="927" y="173" font-family="Times New Roman" font-size="27" font-weight="400" fill="#111" text-anchor="start">*Timestamps</text>
+
+<line x1="636" y1="243" x2="681.1" y2="272.52" stroke="#111" stroke-width="2.46" stroke-linecap="round"/>
+<line x1="681.1" y1="272.52" x2="724.56" y2="251.2" stroke="#111" stroke-width="2.46" stroke-linecap="round"/>
+<line x1="681.1" y1="272.52" x2="706.52" y2="300.4" stroke="#111" stroke-width="2.46" stroke-linecap="round"/>
+<line x1="706.52" y1="300.4" x2="759" y2="296.3" stroke="#111" stroke-width="2.46" stroke-linecap="round"/>
+<circle cx="636" cy="243" r="11.479999999999999" fill="#fff" stroke="#111" stroke-width="1.64"/><text x="636" y="247.92" font-family="Arial" font-size="12.299999999999999" font-weight="400" fill="#111" text-anchor="middle">v1</text>
+<circle cx="681.1" cy="272.52" r="11.479999999999999" fill="#fff" stroke="#111" stroke-width="1.64"/><text x="681.1" y="277.44" font-family="Arial" font-size="12.299999999999999" font-weight="400" fill="#111" text-anchor="middle">v2</text>
+<circle cx="724.56" cy="251.2" r="11.479999999999999" fill="#fff" stroke="#111" stroke-width="1.64"/><text x="724.56" y="256.12" font-family="Arial" font-size="12.299999999999999" font-weight="400" fill="#111" text-anchor="middle">v3</text>
+<circle cx="706.52" cy="300.4" r="11.479999999999999" fill="#fff" stroke="#111" stroke-width="1.64"/><text x="706.52" y="305.32" font-family="Arial" font-size="12.299999999999999" font-weight="400" fill="#111" text-anchor="middle">v4</text>
+<circle cx="759" cy="296.3" r="11.479999999999999" fill="#fff" stroke="#111" stroke-width="1.64"/><text x="759" y="301.22" font-family="Arial" font-size="12.299999999999999" font-weight="400" fill="#111" text-anchor="middle">v5</text>
+
+<line x1="760" y1="254" x2="808" y2="254" stroke="#e29454" stroke-width="3" stroke-linecap="round"/><polygon points="808,254 791.5643990743785,261.3396881550723 791.5643990743785,246.66031184492775" fill="#e29454"/>
+<rect x="800" y="227" width="178" height="56" rx="10" ry="10" fill="#f6f0ed" stroke="#e5a87b" stroke-width="3"/>
+<text x="889" y="267" font-family="Times New Roman" font-size="27" font-weight="400" fill="#111" text-anchor="middle">Self-attention</text>
+<line x1="978" y1="255" x2="1018" y2="255" stroke="#c55d1f" stroke-width="4" stroke-linecap="round"/><polygon points="1018,255 1005.2167548356277,260.70864634283396 1005.2167548356276,249.291353657166" fill="#c55d1f"/>
+<rect x="1025" y="227" width="29" height="65" rx="0" ry="0" fill="url(#orangeBar)" stroke="#b85f18" stroke-width="1"/>
+<text x="1082" y="244" font-family="Times New Roman" font-size="28" font-weight="400" fill="#111" text-anchor="middle">r(t)</text>
+<text x="940" y="320" font-family="Times New Roman" font-size="27" font-weight="400" fill="#111" text-anchor="start">*Edge features</text>
+<line x1="1060" y1="116" x2="1156" y2="116" stroke="#4b9bd3" stroke-width="4" stroke-linecap="round"/>
+<line x1="1156" y1="116" x2="1156" y2="143" stroke="#4b9bd3" stroke-width="4" stroke-linecap="round"/><polygon points="1156,143 1150.291353657166,130.21675483562768 1161.708646342834,130.21675483562768" fill="#4b9bd3"/>
+<rect x="1166" y="148" width="138" height="82" rx="14" ry="14" fill="#f5f5f5" stroke="#111" stroke-width="2"/>
+<text x="1235" y="180" font-family="Times New Roman" font-size="27" font-weight="400" fill="#111" text-anchor="middle">Concat</text>
+<text x="1235" y="215" font-family="Times New Roman" font-size="24" font-weight="400" fill="#111" text-anchor="middle">ψ(·) (opt.)</text>
+<line x1="1058" y1="274" x2="1220" y2="274" stroke="#dd8f55" stroke-width="4" stroke-linecap="round"/>
+<line x1="1220" y1="274" x2="1220" y2="232" stroke="#dd8f55" stroke-width="4" stroke-linecap="round"/><polygon points="1220,232 1225.708646342834,244.78324516437232 1214.291353657166,244.78324516437232" fill="#dd8f55"/>
+<line x1="1304" y1="190" x2="1362" y2="190" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1362,190 1349.2167548356276,195.708646342834 1349.2167548356276,184.291353657166" fill="#111"/>
+<rect x="1369" y="109" width="27" height="169" rx="0" ry="0" fill="url(#mixBar)" stroke="#111" stroke-width="1"/>
+</g>
+
+<g id="dynamic-graph">
+<circle cx="136" cy="453" r="20" fill="#fff" stroke="#111" stroke-width="2"/><text x="136" y="461" font-family="Times New Roman" font-size="24" font-weight="400" fill="#111" text-anchor="middle">v1</text>
+<circle cx="284" cy="423" r="20" fill="#fff" stroke="#111" stroke-width="2"/><text x="284" y="431" font-family="Times New Roman" font-size="24" font-weight="400" fill="#111" text-anchor="middle">v2</text>
+<circle cx="255" cy="516" r="20" fill="#fff" stroke="#111" stroke-width="2"/><text x="255" y="524" font-family="Times New Roman" font-size="24" font-weight="400" fill="#111" text-anchor="middle">v3</text>
+<circle cx="113" cy="522" r="20" fill="#fff" stroke="#111" stroke-width="2"/><text x="113" y="530" font-family="Times New Roman" font-size="24" font-weight="400" fill="#111" text-anchor="middle">v4</text>
+<circle cx="182" cy="594" r="20" fill="#fff" stroke="#111" stroke-width="2"/><text x="182" y="602" font-family="Times New Roman" font-size="24" font-weight="400" fill="#111" text-anchor="middle">v5</text>
+<circle cx="81" cy="656" r="20" fill="#fff" stroke="#111" stroke-width="2"/><text x="81" y="664" font-family="Times New Roman" font-size="24" font-weight="400" fill="#111" text-anchor="middle">v6</text>
+<line x1="130" y1="474" x2="118" y2="502" stroke="#d7191c" stroke-width="3" stroke-linecap="round"/>
+<line x1="155" y1="467" x2="239" y2="503" stroke="#f0b000" stroke-width="3" stroke-linecap="round"/>
+<line x1="132" y1="536" x2="235" y2="522" stroke="#3f74c4" stroke-width="3" stroke-linecap="round"/>
+<line x1="121" y1="540" x2="174" y2="578" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+<line x1="103" y1="540" x2="86" y2="635" stroke="#2fbf6a" stroke-width="3" stroke-linecap="round"/>
+<line x1="268" y1="499" x2="276" y2="444" stroke="#8b50b9" stroke-width="3" stroke-linecap="round"/>
+<text x="176" y="512" font-family="Times New Roman" font-size="31" font-weight="400" fill="#111" text-anchor="middle">t2</text>
+<text x="107" y="483" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle" transform="rotate(-60 107 483)">t1</text>
+<text x="206" y="480" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle" transform="rotate(-40 206 480)">t1</text>
+<text x="151" y="565" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle" transform="rotate(52 151 565)">t3</text>
+<text x="101" y="602" font-family="Times New Roman" font-size="21" font-weight="400" fill="#111" text-anchor="middle" transform="rotate(62 101 602)">t4, t2</text>
+<text x="267" y="475" font-family="Times New Roman" font-size="21" font-weight="400" fill="#111" text-anchor="middle" transform="rotate(-58 267 475)">t5, t6</text>
+</g>
+
+<g id="application">
+<text x="459" y="454" font-family="Times New Roman" font-size="30" font-weight="400" fill="#111" text-anchor="middle">?</text>
+<circle cx="531" cy="454" r="25" fill="#fff" stroke="#111" stroke-width="2"/>
+<path d="M510 448 C526 424 546 431 554 452 C541 441 525 465 510 448 Z" fill="#111" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="431" cy="556" r="19" fill="#fff1df" stroke="#111" stroke-width="2"/><text x="431" y="593" font-family="Times New Roman" font-size="28" font-weight="400" fill="#111" text-anchor="middle">vu</text>
+<line x1="459" y1="548" x2="511" y2="478" stroke="#111" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/>
+<line x1="459" y1="563" x2="532" y2="542" stroke="#111" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/>
+<line x1="461" y1="573" x2="526" y2="646" stroke="#111" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/>
+<rect x="455" y="478" width="16" height="16" rx="0" ry="0" fill="#d9f0c3" stroke="#1d2430" stroke-width="1"/>
+<rect x="471" y="478" width="16" height="16" rx="0" ry="0" fill="#95c56f" stroke="#1d2430" stroke-width="1"/>
+<rect x="487" y="478" width="16" height="16" rx="0" ry="0" fill="#f6f6f6" stroke="#1d2430" stroke-width="1"/>
+<rect x="503" y="478" width="16" height="16" rx="0" ry="0" fill="#c8e6b9" stroke="#1d2430" stroke-width="1"/>
+<rect x="519" y="478" width="16" height="16" rx="0" ry="0" fill="#8fbf6b" stroke="#1d2430" stroke-width="1"/><text x="586" y="481" font-family="Times New Roman" font-size="21" font-weight="400" fill="#111" text-anchor="middle">v1</text>
+<rect x="500" y="588" width="16" height="16" rx="0" ry="0" fill="#d9f0c3" stroke="#1d2430" stroke-width="1"/>
+<rect x="516" y="588" width="16" height="16" rx="0" ry="0" fill="#95c56f" stroke="#1d2430" stroke-width="1"/>
+<rect x="532" y="588" width="16" height="16" rx="0" ry="0" fill="#f6f6f6" stroke="#1d2430" stroke-width="1"/>
+<rect x="548" y="588" width="16" height="16" rx="0" ry="0" fill="#c8e6b9" stroke="#1d2430" stroke-width="1"/>
+<rect x="564" y="588" width="16" height="16" rx="0" ry="0" fill="#8fbf6b" stroke="#1d2430" stroke-width="1"/><text x="633" y="594" font-family="Times New Roman" font-size="21" font-weight="400" fill="#111" text-anchor="middle">v2</text>
+<rect x="500" y="676" width="16" height="16" rx="0" ry="0" fill="#d9f0c3" stroke="#1d2430" stroke-width="1"/>
+<rect x="516" y="676" width="16" height="16" rx="0" ry="0" fill="#95c56f" stroke="#1d2430" stroke-width="1"/>
+<rect x="532" y="676" width="16" height="16" rx="0" ry="0" fill="#f6f6f6" stroke="#1d2430" stroke-width="1"/>
+<rect x="548" y="676" width="16" height="16" rx="0" ry="0" fill="#c8e6b9" stroke="#1d2430" stroke-width="1"/>
+<rect x="564" y="676" width="16" height="16" rx="0" ry="0" fill="#8fbf6b" stroke="#1d2430" stroke-width="1"/><text x="633" y="683" font-family="Times New Roman" font-size="21" font-weight="400" fill="#111" text-anchor="middle">v3</text>
+<rect x="605" y="422" width="223" height="130" rx="0" ry="0" fill="#fff8e6" stroke="#111" stroke-width="1"/>
+<line x1="605" y1="454" x2="828" y2="454" stroke="#111" stroke-width="1" stroke-linecap="round"/>
+<line x1="756" y1="422" x2="756" y2="552" stroke="#111" stroke-width="1" stroke-linecap="round"/>
+<text x="681" y="448" font-family="Times New Roman" font-size="25" font-weight="400" fill="#111" text-anchor="middle">Edges</text>
+<text x="793" y="448" font-family="Times New Roman" font-size="25" font-weight="400" fill="#111" text-anchor="middle">Rate</text>
+<text x="681" y="482" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle">P((vu, v1)|t)</text>
+<text x="681" y="513" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle">P((vu, v2)|t)</text>
+<text x="681" y="544" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle">P((vu, v3)|t)</text>
+<text x="792" y="482" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle">0.1</text>
+<text x="792" y="513" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle">0.8</text>
+<text x="792" y="544" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle">0.6</text>
+<line x1="724" y1="552" x2="724" y2="589" stroke="#e9c421" stroke-width="3" stroke-linecap="round"/><polygon points="724,589 716.6603118449277,572.5643990743785 731.3396881550723,572.5643990743785" fill="#e9c421"/>
+<circle cx="614" cy="621" r="19" fill="#fff1df" stroke="#111" stroke-width="2"/>
+<text x="703" y="625" font-family="Times New Roman" font-size="24" font-weight="400" fill="#111" text-anchor="middle">buy, t</text>
+<line x1="668" y1="632" x2="755" y2="632" stroke="#8b50b9" stroke-width="3" stroke-linecap="round"/><polygon points="755,632 742.2167548356277,637.708646342834 742.2167548356276,626.291353657166" fill="#8b50b9"/>
+</g>
+
+<g id="parameter-space">
+<line x1="955" y1="421" x2="955" y2="690" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="955,690 949.291353657166,677.2167548356277 960.708646342834,677.2167548356276" fill="#111"/>
+<line x1="955" y1="421" x2="1330" y2="421" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="1330,421 1317.2167548356276,426.70864634283396 1317.2167548356276,415.29135365716604" fill="#111"/>
+<text x="999" y="414" font-family="Times New Roman" font-size="27" font-weight="400" fill="#111" text-anchor="middle">de</text>
+<text x="1130" y="414" font-family="Times New Roman" font-size="27" font-weight="400" fill="#111" text-anchor="middle">dt</text>
+<text x="933" y="505" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle" transform="rotate(-90 933 505)">deo</text>
+<text x="934" y="618" font-family="Times New Roman" font-size="23" font-weight="400" fill="#111" text-anchor="middle" transform="rotate(-90 934 618)">dto</text>
+<rect x="968" y="452" width="284" height="212" rx="0" ry="0" fill="none" stroke="#d30000" stroke-width="4"/>
+<rect x="978" y="462" width="34" height="34" rx="0" ry="0" fill="#fff9e4" stroke="#1d2430" stroke-width="1"/>
+<rect x="1012" y="462" width="34" height="34" rx="0" ry="0" fill="#bfa4c7" stroke="#1d2430" stroke-width="1"/>
+<rect x="1046" y="462" width="34" height="34" rx="0" ry="0" fill="#fff5d5" stroke="#1d2430" stroke-width="1"/>
+<rect x="1080" y="462" width="34" height="34" rx="0" ry="0" fill="#ffd98a" stroke="#1d2430" stroke-width="1"/>
+<rect x="978" y="496" width="34" height="34" rx="0" ry="0" fill="#f8f4bd" stroke="#1d2430" stroke-width="1"/>
+<rect x="1012" y="496" width="34" height="34" rx="0" ry="0" fill="#d98783" stroke="#1d2430" stroke-width="1"/>
+<rect x="1046" y="496" width="34" height="34" rx="0" ry="0" fill="#cf9fbc" stroke="#1d2430" stroke-width="1"/>
+<rect x="1080" y="496" width="34" height="34" rx="0" ry="0" fill="#b795c5" stroke="#1d2430" stroke-width="1"/>
+<rect x="1114" y="535" width="34" height="34" rx="0" ry="0" fill="#d7e7f5" stroke="#1d2430" stroke-width="1"/>
+<rect x="1148" y="535" width="34" height="34" rx="0" ry="0" fill="#c4ddb6" stroke="#1d2430" stroke-width="1"/>
+<rect x="1182" y="535" width="34" height="34" rx="0" ry="0" fill="#9be0aa" stroke="#1d2430" stroke-width="1"/>
+<rect x="1216" y="535" width="34" height="34" rx="0" ry="0" fill="#b7dedb" stroke="#1d2430" stroke-width="1"/>
+<rect x="1114" y="569" width="34" height="34" rx="0" ry="0" fill="#d8e8f7" stroke="#1d2430" stroke-width="1"/>
+<rect x="1148" y="569" width="34" height="34" rx="0" ry="0" fill="#a6dfca" stroke="#1d2430" stroke-width="1"/>
+<rect x="1182" y="569" width="34" height="34" rx="0" ry="0" fill="#91dfa0" stroke="#1d2430" stroke-width="1"/>
+<rect x="1216" y="569" width="34" height="34" rx="0" ry="0" fill="#aedbd7" stroke="#1d2430" stroke-width="1"/>
+<rect x="1114" y="603" width="34" height="34" rx="0" ry="0" fill="#b8caea" stroke="#1d2430" stroke-width="1"/>
+<rect x="1148" y="603" width="34" height="34" rx="0" ry="0" fill="#ade2d6" stroke="#1d2430" stroke-width="1"/>
+<rect x="1182" y="603" width="34" height="34" rx="0" ry="0" fill="#65d98f" stroke="#1d2430" stroke-width="1"/>
+<rect x="1216" y="603" width="34" height="34" rx="0" ry="0" fill="#8ccce2" stroke="#1d2430" stroke-width="1"/>
+<rect x="1114" y="637" width="34" height="34" rx="0" ry="0" fill="#fff" stroke="#1d2430" stroke-width="1"/>
+<rect x="1148" y="637" width="34" height="34" rx="0" ry="0" fill="#fff" stroke="#1d2430" stroke-width="1"/>
+<rect x="1182" y="637" width="34" height="34" rx="0" ry="0" fill="#fff" stroke="#1d2430" stroke-width="1"/>
+<rect x="1216" y="637" width="34" height="34" rx="0" ry="0" fill="#fff" stroke="#1d2430" stroke-width="1"/>
+<text x="1262" y="468" font-family="Times New Roman" font-size="25" font-weight="400" fill="#111" text-anchor="start">Input</text>
+<text x="963" y="692" font-family="Times New Roman" font-size="25" font-weight="400" fill="#111" text-anchor="start">Output</text>
+<text x="1262" y="566" font-family="Times New Roman" font-size="30" font-weight="400" fill="#111" text-anchor="start">...</text>
+</g>
+
+<path d="M508 164 L554 164 L554 147 L584 194 L554 241 L554 222 L508 222 Z" fill="#fff" stroke="#333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M183 383 L230 383 L230 399 L256 352 L230 336 L230 359 L183 359 Z" fill="#fff" stroke="#555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M573 358 L621 358 L621 385 L646 344 L621 319 L621 342 L573 342 Z" fill="#fff" stroke="#555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1242 358 L1289 358 L1289 399 L1337 354 L1289 319 L1289 342 L1242 342 Z" fill="#cfcfcf" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

@@ -22,6 +22,11 @@ function requireRuntimeModule(packageName) {
         continue;
       }
       try {
+        const pnpmHoistDir = path.join(root, ".pnpm", "node_modules");
+        if (fs.existsSync(pnpmHoistDir) && !Module.globalPaths.includes(pnpmHoistDir)) {
+          process.env.NODE_PATH = [process.env.NODE_PATH, pnpmHoistDir].filter(Boolean).join(path.delimiter);
+          Module._initPaths();
+        }
         const scopedRequire = Module.createRequire(path.join(root, "index.js"));
         return scopedRequire(packageName);
       } catch (_) {

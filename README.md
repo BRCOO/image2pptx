@@ -8,6 +8,28 @@ Semantic SVG reconstruction first. Native PPTX shapes second. Not a screenshot d
 ![Windows](https://img.shields.io/badge/platform-Windows-0078D4)
 ![PowerPoint](https://img.shields.io/badge/requires-PowerPoint-B7472A)
 
+## Demo
+
+| Source image | PPTX preview |
+| --- | --- |
+| ![Dynamic graph source](examples/source/dynamic-graph.jpg) | ![Dynamic graph editable PPTX preview](examples/outputs/dynamic-graph-editable-preview.png)<br>Fully editable: 212 shapes, 68 text runs, 0 pictures. |
+| ![Fusion network source](examples/source/fusion-network.png) | ![Fusion network PPTX preview](examples/outputs/fusion-network-editable-preview.png)<br>Embedded SVG fallback for a dense full-page architecture figure. |
+
+Download the demo decks:
+
+- [Dynamic graph editable PPTX](examples/outputs/dynamic-graph-editable.pptx)
+- [Fusion network embedded fallback PPTX](examples/outputs/fusion-network-embedded.pptx)
+
+The SVG reconstructions are also included:
+
+- [Dynamic graph SVG](examples/outputs/dynamic-graph.svg)
+- [Fusion network SVG](examples/outputs/fusion-network.svg)
+
+Editability reports:
+
+- [Dynamic graph report](examples/outputs/dynamic-graph-editability.json)
+- [Fusion network fallback report](examples/outputs/fusion-network-editability.json)
+
 ## Why image2pptx
 
 Most image-to-PowerPoint workflows stop at one of two bad outcomes:
@@ -116,4 +138,3 @@ Use $image2pptx to convert this diagram image into a semantic SVG and editable P
 ## Contributing
 
 Issues and pull requests are welcome. Small reproducible examples are especially helpful for improving editability and visual fidelity.
-

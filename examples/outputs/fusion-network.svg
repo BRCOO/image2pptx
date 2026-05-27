@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2816" height="1536" viewBox="0 0 2816 1536">
+<defs>
+
+<linearGradient id="bluePanel" x1="0" x2="0" y1="0" y2="1">
+  <stop offset="0" stop-color="#dbeeff"/>
+  <stop offset="1" stop-color="#f6fbff"/>
+</linearGradient>
+<linearGradient id="greenPanel" x1="0" x2="0" y1="0" y2="1">
+  <stop offset="0" stop-color="#e5f3d6"/>
+  <stop offset="1" stop-color="#f7fff0"/>
+</linearGradient>
+<linearGradient id="headerBlue" x1="0" x2="0" y1="0" y2="1">
+  <stop offset="0" stop-color="#9ebfe0"/>
+  <stop offset="1" stop-color="#c6def5"/>
+</linearGradient>
+<linearGradient id="headerGreen" x1="0" x2="0" y1="0" y2="1">
+  <stop offset="0" stop-color="#bdd6a8"/>
+  <stop offset="1" stop-color="#d7e9c9"/>
+</linearGradient>
+
+</defs>
+<rect width="2816" height="1536" fill="#ffffff"/>
+
+<text x="1408" y="94" font-family="Arial" font-size="64" font-weight="700" fill="#111" text-anchor="middle">Proposed Context-Aware Modality-Fusion Network for Segmentation</text>
+<text x="1408" y="195" font-family="Arial" font-size="52" font-weight="400" fill="#111" text-anchor="middle">Detailed Architecture with Cascaded Dual Attention Module (CDAM).</text>
+<text x="112" y="288" font-family="Arial" font-size="40" font-weight="700" fill="#111" text-anchor="middle">Input</text>
+
+<rect x="55" y="390" width="130" height="130" rx="0" ry="0" fill="#111" stroke="#111" stroke-width="2"/>
+<rect x="41" y="378" width="130" height="130" rx="0" ry="0" fill="#181818" stroke="#111" stroke-width="2"/>
+<rect x="27" y="366" width="130" height="130" rx="0" ry="0" fill="#222" stroke="#111" stroke-width="2"/>
+<circle cx="92" cy="431" r="48" fill="#9a9a9a" stroke="#333" stroke-width="3"/>
+<path d="M69 428 C83 398 113 399 127 431 C115 462 85 465 69 428 Z" fill="#bfbfbf" stroke="#777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M86 429 C95 440 100 440 109 429" fill="none" stroke="#555" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="93" y="555" font-family="Arial" font-size="28" font-weight="700" fill="#111" text-anchor="middle">MRI T1</text>
+
+
+<rect x="55" y="740" width="130" height="130" rx="0" ry="0" fill="#111" stroke="#111" stroke-width="2"/>
+<rect x="41" y="728" width="130" height="130" rx="0" ry="0" fill="#181818" stroke="#111" stroke-width="2"/>
+<rect x="27" y="716" width="130" height="130" rx="0" ry="0" fill="#222" stroke="#111" stroke-width="2"/>
+<circle cx="92" cy="781" r="48" fill="#9a9a9a" stroke="#333" stroke-width="3"/>
+<path d="M69 778 C83 748 113 749 127 781 C115 812 85 815 69 778 Z" fill="#bfbfbf" stroke="#777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M86 779 C95 790 100 790 109 779" fill="none" stroke="#555" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="93" y="905" font-family="Arial" font-size="28" font-weight="700" fill="#111" text-anchor="middle">Branch T2</text>
+
+
+<rect x="55" y="1088" width="130" height="130" rx="0" ry="0" fill="#111" stroke="#111" stroke-width="2"/>
+<rect x="41" y="1076" width="130" height="130" rx="0" ry="0" fill="#181818" stroke="#111" stroke-width="2"/>
+<rect x="27" y="1064" width="130" height="130" rx="0" ry="0" fill="#222" stroke="#111" stroke-width="2"/>
+<circle cx="92" cy="1129" r="48" fill="#9a9a9a" stroke="#333" stroke-width="3"/>
+<path d="M69 1126 C83 1096 113 1097 127 1129 C115 1160 85 1163 69 1126 Z" fill="#bfbfbf" stroke="#777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M86 1127 C95 1138 100 1138 109 1127" fill="none" stroke="#555" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="93" y="1253" font-family="Arial" font-size="28" font-weight="700" fill="#111" text-anchor="middle">FLAIR</text>
+
+
+<g id="encoder">
+<rect x="286" y="255" width="690" height="1120" rx="24" ry="24" fill="url(#bluePanel)" stroke="#375f89" stroke-width="3"/>
+<rect x="286" y="255" width="690" height="70" rx="18" ry="18" fill="url(#headerBlue)" stroke="#375f89" stroke-width="2"/>
+<text x="631" y="307" font-family="Arial" font-size="45" font-weight="700" fill="#111" text-anchor="middle">Encoder</text>
+
+<rect x="300" y="345" width="520" height="205" rx="24" ry="24" fill="none" stroke="#254c74" stroke-width="2" stroke-dasharray="12 9"/>
+
+<path d="M330 398 L360 380 L360 460 L330 478 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="375" y="438" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 375 438)">Conv</text>
+
+<line x1="400" y1="440" x2="438" y2="440" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="438,440 425.2167548356277,445.70864634283396 425.2167548356277,434.29135365716604" fill="#111"/>
+
+<rect x="438" y="390" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="462" y="457" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 462 457)">ReLU</text>
+
+<line x1="480" y1="440" x2="520" y2="440" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="520,440 507.2167548356277,445.70864634283396 507.2167548356277,434.29135365716604" fill="#111"/>
+
+<rect x="520" y="390" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="544" y="457" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 544 457)">ReLU</text>
+
+<line x1="562" y1="440" x2="604" y2="440" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="604,440 591.2167548356277,445.70864634283396 591.2167548356276,434.29135365716604" fill="#111"/>
+
+<rect x="604" y="390" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="628" y="457" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 628 457)">BatchNorm</text>
+
+<line x1="646" y1="440" x2="705" y2="440" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="705,440 692.2167548356277,445.70864634283396 692.2167548356276,434.29135365716604" fill="#111"/>
+
+<path d="M705 403 L735 385 L735 465 L705 483 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="750" y="443" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 750 443)"></text>
+
+<line x1="760" y1="440" x2="830" y2="440" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="830,440 817.2167548356277,445.70864634283396 817.2167548356276,434.29135365716604" fill="#111"/>
+
+<path d="M865 418 L895 400 L895 480 L865 498 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="910" y="458" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 910 458)"></text>
+
+<text x="610" y="533" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">Branch T1</text>
+<text x="920" y="483" font-family="Arial" font-size="28" font-weight="700" fill="#111" text-anchor="middle">Scale 1</text>
+
+
+<rect x="300" y="675" width="520" height="205" rx="24" ry="24" fill="none" stroke="#254c74" stroke-width="2" stroke-dasharray="12 9"/>
+
+<path d="M330 728 L360 710 L360 790 L330 808 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="375" y="768" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 375 768)">Conv</text>
+
+<line x1="400" y1="770" x2="438" y2="770" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="438,770 425.2167548356277,775.708646342834 425.2167548356277,764.291353657166" fill="#111"/>
+
+<rect x="438" y="720" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="462" y="787" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 462 787)">ReLU</text>
+
+<line x1="480" y1="770" x2="520" y2="770" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="520,770 507.2167548356277,775.708646342834 507.2167548356277,764.291353657166" fill="#111"/>
+
+<rect x="520" y="720" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="544" y="787" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 544 787)">ReLU</text>
+
+<line x1="562" y1="770" x2="604" y2="770" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="604,770 591.2167548356277,775.708646342834 591.2167548356276,764.291353657166" fill="#111"/>
+
+<rect x="604" y="720" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="628" y="787" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 628 787)">BatchNorm</text>
+
+<line x1="646" y1="770" x2="705" y2="770" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="705,770 692.2167548356277,775.708646342834 692.2167548356276,764.291353657166" fill="#111"/>
+
+<path d="M705 733 L735 715 L735 795 L705 813 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="750" y="773" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 750 773)"></text>
+
+<line x1="760" y1="770" x2="830" y2="770" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="830,770 817.2167548356277,775.708646342834 817.2167548356276,764.291353657166" fill="#111"/>
+
+<path d="M865 748 L895 730 L895 810 L865 828 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="910" y="788" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 910 788)"></text>
+
+<text x="610" y="863" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">Branch T2</text>
+<text x="920" y="813" font-family="Arial" font-size="28" font-weight="700" fill="#111" text-anchor="middle">Scale 2</text>
+
+
+<rect x="300" y="1005" width="520" height="205" rx="24" ry="24" fill="none" stroke="#254c74" stroke-width="2" stroke-dasharray="12 9"/>
+
+<path d="M330 1058 L360 1040 L360 1120 L330 1138 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="375" y="1098" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 375 1098)">Conv</text>
+
+<line x1="400" y1="1100" x2="438" y2="1100" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="438,1100 425.2167548356277,1105.708646342834 425.2167548356277,1094.291353657166" fill="#111"/>
+
+<rect x="438" y="1050" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="462" y="1117" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 462 1117)">ReLU</text>
+
+<line x1="480" y1="1100" x2="520" y2="1100" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="520,1100 507.2167548356277,1105.708646342834 507.2167548356277,1094.291353657166" fill="#111"/>
+
+<rect x="520" y="1050" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="544" y="1117" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 544 1117)">ReLU</text>
+
+<line x1="562" y1="1100" x2="604" y2="1100" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="604,1100 591.2167548356277,1105.708646342834 591.2167548356276,1094.291353657166" fill="#111"/>
+
+<rect x="604" y="1050" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="628" y="1117" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 628 1117)">BatchNorm</text>
+
+<line x1="646" y1="1100" x2="705" y2="1100" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="705,1100 692.2167548356277,1105.708646342834 692.2167548356276,1094.291353657166" fill="#111"/>
+
+<path d="M705 1063 L735 1045 L735 1125 L705 1143 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="750" y="1103" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 750 1103)"></text>
+
+<line x1="760" y1="1100" x2="830" y2="1100" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="830,1100 817.2167548356277,1105.708646342834 817.2167548356276,1094.291353657166" fill="#111"/>
+
+<path d="M865 1078 L895 1060 L895 1140 L865 1158 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="910" y="1118" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 910 1118)"></text>
+
+<text x="610" y="1193" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">Branch FLAIR</text>
+<text x="920" y="1143" font-family="Arial" font-size="28" font-weight="700" fill="#111" text-anchor="middle">Scale 4</text>
+
+
+<path d="M865 853 L895 835 L895 915 L865 933 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="910" y="893" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 910 893)"></text>
+<text x="920" y="918" font-family="Arial" font-size="28" font-weight="700" fill="#111" text-anchor="middle">Scale 3</text>
+<line x1="190" y1="482" x2="286" y2="482" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="286,482 273.2167548356277,487.70864634283396 273.2167548356277,476.29135365716604" fill="#111"/>
+<line x1="190" y1="812" x2="286" y2="812" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="286,812 273.2167548356277,817.708646342834 273.2167548356277,806.291353657166" fill="#111"/>
+<line x1="190" y1="1142" x2="286" y2="1142" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="286,1142 273.2167548356277,1147.708646342834 273.2167548356277,1136.291353657166" fill="#111"/>
+</g>
+
+<g id="fusion">
+<rect x="1005" y="255" width="940" height="1120" rx="24" ry="24" fill="url(#greenPanel)" stroke="#60854a" stroke-width="3"/>
+<rect x="1005" y="255" width="940" height="70" rx="18" ry="18" fill="url(#headerGreen)" stroke="#60854a" stroke-width="2"/>
+<text x="1475" y="307" font-family="Arial" font-size="42" font-weight="700" fill="#111" text-anchor="middle">Context-Aware Fusion</text>
+<rect x="1200" y="520" width="662" height="662" rx="0" ry="0" fill="none" stroke="#5c8747" stroke-width="2" stroke-dasharray="14 9"/>
+<rect x="1380" y="515" width="480" height="265" rx="24" ry="24" fill="none" stroke="#5c8747" stroke-width="2" stroke-dasharray="14 9"/>
+<rect x="1380" y="858" width="480" height="265" rx="24" ry="24" fill="none" stroke="#5c8747" stroke-width="2" stroke-dasharray="14 9"/>
+
+<path d="M1082 623 L1112 605 L1112 685 L1082 703 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1127" y="663" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1127 663)"></text>
+<text x="1128" y="780" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">Feature A</text>
+
+<path d="M1082 913 L1112 895 L1112 975 L1082 993 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1127" y="953" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1127 953)"></text>
+<text x="1128" y="1070" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">Feature B</text>
+
+<rect x="1400" y="590" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="1424" y="657" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1424 657)">AvgPool</text>
+
+
+<rect x="1474" y="590" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="1498" y="657" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1498 657)">MaxPool</text>
+
+
+<rect x="1548" y="590" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="1572" y="657" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1572 657)">Shared</text>
+
+
+<rect x="1622" y="590" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="1646" y="657" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1646 657)">MLP</text>
+
+
+<rect x="1696" y="590" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="1720" y="657" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1720 657)">Sigmoid</text>
+
+<text x="1620" y="570" font-family="Arial" font-size="32" font-weight="700" fill="#111" text-anchor="middle">Channel Attention</text>
+
+<rect x="1400" y="905" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="1424" y="972" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1424 972)">Conv</text>
+
+
+<rect x="1488" y="905" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="1512" y="972" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1512 972)">ReLU</text>
+
+
+<rect x="1576" y="905" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="1600" y="972" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1600 972)">Conv</text>
+
+
+<rect x="1664" y="905" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="1688" y="972" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1688 972)">Sigmoid</text>
+
+<text x="1600" y="1110" font-family="Arial" font-size="33" font-weight="700" fill="#111" text-anchor="middle">Spatial Attention</text>
+<line x1="955" y1="482" x2="2035" y2="482" stroke="#111" stroke-width="3" stroke-linecap="round"/><polygon points="2035,482 2022.2167548356276,487.70864634283396 2022.2167548356276,476.29135365716604" fill="#111"/>
+<line x1="976" y1="812" x2="1055" y2="812" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+<line x1="976" y1="1142" x2="1055" y2="1142" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+<line x1="1055" y1="812" x2="1055" y2="685" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+<line x1="1055" y1="1142" x2="1055" y2="975" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+<line x1="1055" y1="685" x2="1100" y2="685" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1100,685 1087.2167548356276,690.708646342834 1087.2167548356276,679.291353657166" fill="#111"/>
+<line x1="1055" y1="975" x2="1100" y2="975" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1100,975 1087.2167548356276,980.708646342834 1087.2167548356276,969.291353657166" fill="#111"/>
+<line x1="1155" y1="685" x2="1200" y2="685" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+<line x1="1155" y1="975" x2="1200" y2="975" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+<line x1="1260" y1="685" x2="1380" y2="685" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1380,685 1367.2167548356276,690.708646342834 1367.2167548356276,679.291353657166" fill="#111"/>
+<line x1="1260" y1="975" x2="1380" y2="975" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1380,975 1367.2167548356276,980.708646342834 1367.2167548356276,969.291353657166" fill="#111"/>
+<line x1="1770" y1="650" x2="1810" y2="650" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1810,650 1797.2167548356276,655.708646342834 1797.2167548356276,644.291353657166" fill="#111"/>
+<circle cx="1855" cy="813" r="22" fill="#fff" stroke="#111" stroke-width="4"/>
+<line x1="1780" y1="1000" x2="1810" y2="1000" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1810,1000 1797.2167548356276,1005.708646342834 1797.2167548356276,994.291353657166" fill="#111"/>
+<line x1="1855" y1="673" x2="1855" y2="789" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1855,789 1849.291353657166,776.2167548356277 1860.708646342834,776.2167548356276" fill="#111"/>
+<line x1="1855" y1="975" x2="1855" y2="837" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1855,837 1860.708646342834,849.7832451643723 1849.291353657166,849.7832451643724" fill="#111"/>
+
+<rect x="1915" y="728" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="1939" y="795" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 1939 795)">1x1 Conv</text>
+
+
+<path d="M1995 743 L2025 725 L2025 805 L1995 823 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2040" y="783" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 2040 783)"></text>
+
+<text x="2038" y="934" font-family="Arial" font-size="30" font-weight="700" fill="#111" text-anchor="middle">Fused</text>
+<text x="2038" y="975" font-family="Arial" font-size="30" font-weight="700" fill="#111" text-anchor="middle">Features</text>
+<line x1="1878" y1="813" x2="1915" y2="813" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1915,813 1902.2167548356276,818.708646342834 1902.2167548356276,807.291353657166" fill="#111"/>
+<line x1="1958" y1="813" x2="1995" y2="813" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="1995,813 1982.2167548356276,818.708646342834 1982.2167548356276,807.291353657166" fill="#111"/>
+<rect x="1126" y="1210" width="688" height="100" rx="14" ry="14" fill="#f9fbf5" stroke="#111" stroke-width="2"/>
+<text x="1470" y="1255" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">Cascaded Dual Attention Module (CDAM)</text>
+<text x="1470" y="1295" font-family="Arial" font-size="30" font-weight="400" fill="#111" text-anchor="middle">Cascaded Dual Attention Module (CDAM)</text>
+</g>
+
+<g id="decoder">
+<rect x="1975" y="255" width="840" height="1120" rx="24" ry="24" fill="url(#bluePanel)" stroke="#375f89" stroke-width="3"/>
+<rect x="1975" y="255" width="840" height="70" rx="18" ry="18" fill="url(#headerBlue)" stroke="#375f89" stroke-width="2"/>
+<text x="2395" y="307" font-family="Arial" font-size="45" font-weight="700" fill="#111" text-anchor="middle">Decoder</text>
+<rect x="2012" y="345" width="520" height="1020" rx="24" ry="24" fill="none" stroke="#254c74" stroke-width="2" stroke-dasharray="12 9"/>
+<line x1="1958" y1="813" x2="2020" y2="813" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="2020,813 2007.2167548356276,818.708646342834 2007.2167548356276,807.291353657166" fill="#111"/>
+
+<path d="M2058 448 L2088 430 L2088 510 L2058 528 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2103" y="488" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 2103 488)"></text>
+<text x="2104" y="588" font-family="Arial" font-size="30" font-weight="700" fill="#111" text-anchor="middle">Feature</text><text x="2104" y="630" font-family="Arial" font-size="30" font-weight="700" fill="#111" text-anchor="middle">Upsampling</text>
+
+<path d="M2058 788 L2088 770 L2088 850 L2058 868 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2103" y="828" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 2103 828)"></text>
+<text x="2104" y="962" font-family="Arial" font-size="45" font-weight="700" fill="#111" text-anchor="middle">...</text>
+
+<path d="M2058 1028 L2088 1010 L2088 1090 L2058 1108 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2103" y="1068" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 2103 1068)"></text>
+
+<path d="M2080 1018 L2110 1000 L2110 1080 L2080 1098 Z" fill="#9bb8d5" stroke="#12304e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2125" y="1058" font-family="Arial" font-size="18" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 2125 1058)"></text>
+<text x="2104" y="1248" font-family="Arial" font-size="30" font-weight="700" fill="#111" text-anchor="middle">Feature</text><text x="2104" y="1290" font-family="Arial" font-size="30" font-weight="700" fill="#111" text-anchor="middle">Upsampling</text>
+<line x1="2115" y1="482" x2="2265" y2="482" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+<line x1="2265" y1="482" x2="2265" y2="792" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="2265,792 2259.291353657166,779.2167548356277 2270.708646342834,779.2167548356276" fill="#111"/>
+<line x1="2115" y1="813" x2="2255" y2="813" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="2255,813 2242.216754835628,818.708646342834 2242.216754835628,807.291353657166" fill="#111"/>
+<circle cx="2265" cy="813" r="22" fill="#fff" stroke="#111" stroke-width="4"/>
+<line x1="2288" y1="813" x2="2380" y2="813" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="2380,813 2367.216754835628,818.708646342834 2367.216754835628,807.291353657166" fill="#111"/>
+<line x1="2115" y1="1142" x2="2255" y2="1142" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="2255,1142 2242.216754835628,1147.708646342834 2242.216754835628,1136.291353657166" fill="#111"/>
+<circle cx="2265" cy="1142" r="22" fill="#fff" stroke="#111" stroke-width="4"/>
+<line x1="2265" y1="835" x2="2265" y2="1120" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="2265,1120 2259.291353657166,1107.2167548356276 2270.708646342834,1107.2167548356276" fill="#111"/>
+<rect x="2330" y="345" width="220" height="1020" rx="0" ry="0" fill="none" stroke="#254c74" stroke-width="2" stroke-dasharray="12 9"/>
+<text x="2435" y="650" font-family="Arial" font-size="32" font-weight="700" fill="#111" text-anchor="middle">Segmentation</text>
+<text x="2435" y="708" font-family="Arial" font-size="32" font-weight="700" fill="#111" text-anchor="middle">Head</text>
+
+<rect x="2390" y="710" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="2414" y="777" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 2414 777)">1x1 Conv</text>
+
+
+<rect x="2480" y="710" width="42" height="112" rx="8" ry="8" fill="#dcdcdc" stroke="#222" stroke-width="2"/>
+<text x="2504" y="777" font-family="Arial" font-size="23" font-weight="700" fill="#111" text-anchor="middle" transform="rotate(-90 2504 777)">Softmax</text>
+
+<line x1="2300" y1="813" x2="2390" y2="813" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="2390,813 2377.216754835628,818.708646342834 2377.216754835628,807.291353657166" fill="#111"/>
+<line x1="2432" y1="813" x2="2480" y2="813" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="2480,813 2467.216754835628,818.708646342834 2467.216754835628,807.291353657166" fill="#111"/>
+<line x1="2522" y1="813" x2="2585" y2="813" stroke="#111" stroke-width="4" stroke-linecap="round"/><polygon points="2585,813 2572.216754835628,818.708646342834 2572.216754835628,807.291353657166" fill="#111"/>
+<rect x="2585" y="705" width="190" height="190" rx="0" ry="0" fill="#40358e" stroke="#544aa0" stroke-width="2"/>
+<path d="M2668 731 C2720 726 2750 770 2741 823 C2727 893 2652 880 2624 835 C2592 782 2622 740 2668 731 Z" fill="#95ca70" stroke="#95ca70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2622 755 C2655 765 2657 815 2620 836 C2594 813 2597 772 2622 755 Z" fill="#f0db43" stroke="#f0db43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2680" y="955" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">Segmentation</text>
+<text x="2680" y="1000" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">Map</text>
+<text x="2445" y="1250" font-family="Arial" font-size="30" font-weight="700" fill="#111" text-anchor="middle">Segmentation</text>
+<text x="2445" y="1292" font-family="Arial" font-size="30" font-weight="700" fill="#111" text-anchor="middle">Head</text>
+<rect x="2560" y="1015" width="38" height="32" rx="0" ry="0" fill="#3f3d99" stroke="#111" stroke-width="1"/><text x="2608" y="1040" font-family="Arial" font-size="24" font-weight="700" fill="#111" text-anchor="start">Tumor Core</text>
+<rect x="2560" y="1060" width="38" height="32" rx="0" ry="0" fill="#6f934e" stroke="#111" stroke-width="1"/><text x="2608" y="1085" font-family="Arial" font-size="24" font-weight="700" fill="#111" text-anchor="start">Whole Tumor</text>
+<rect x="2560" y="1105" width="38" height="32" rx="0" ry="0" fill="#9aca76" stroke="#111" stroke-width="1"/><text x="2608" y="1130" font-family="Arial" font-size="24" font-weight="700" fill="#111" text-anchor="start">Enhancing Tumor</text>
+<rect x="2560" y="1150" width="38" height="32" rx="0" ry="0" fill="#b7b7b7" stroke="#111" stroke-width="1"/><text x="2608" y="1175" font-family="Arial" font-size="24" font-weight="700" fill="#111" text-anchor="start">Class Class</text>
+</g>
+
+<line x1="2030" y1="1375" x2="1980" y2="1375" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+<line x1="2030" y1="1375" x2="900" y2="1375" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+<line x1="900" y1="1375" x2="900" y2="1240" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+<line x1="900" y1="1240" x2="1980" y2="1100" stroke="#111" stroke-width="2" stroke-dasharray="12 9" stroke-linecap="round"/>
+<text x="760" y="1438" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">⊗ for Element-wise Multiply</text>
+<text x="760" y="1505" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">⊗ for Element-wise Multiply</text>
+<text x="1930" y="1438" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">⊕ for Element-wise Addition</text>
+<text x="1930" y="1505" font-family="Arial" font-size="31" font-weight="700" fill="#111" text-anchor="middle">⊙ for Concatenation</text>
+<text x="1408" y="1515" font-family="Arial" font-size="42" font-weight="700" fill="#111" text-anchor="middle">Figure 3</text>
+
+</svg>

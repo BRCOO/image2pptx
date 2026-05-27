@@ -1,3 +1,4 @@
+---
 name: image2pptx
 description: Convert raster diagram images, screenshots, scientific figures, workflow charts, slide screenshots, PNG/JPEG/PDF-rendered pages, or existing SVG designs into semantic editable SVG plus highly editable PowerPoint PPTX. Use when Codex needs image-to-SVG-to-PPTX, image2ppt, image2pptx, screenshot to editable PPT, PNG to editable PowerPoint, SVG to PPT shapes, or a diagram rebuilt as editable text boxes, shapes, arrows, icons, and grouped elements for manual micro-adjustment.
 ---

@@ -2,16 +2,11 @@ out/
 dist/
 temp/
 tmp/
-*.pptx
-*.png
-*.jpg
-*.jpeg
 *.pdf
-*.svg
 !.github/
 !references/
 !scripts/
 !agents/
+!examples/
 !README.md
 !SKILL.md
-
