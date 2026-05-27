@@ -1,0 +1,17 @@
+out/
+dist/
+temp/
+tmp/
+*.pptx
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+!.github/
+!references/
+!scripts/
+!agents/
+!README.md
+!SKILL.md
+

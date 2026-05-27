@@ -1,0 +1,5 @@
+interface:
+  display_name: "image2pptx"
+  short_description: "Rebuild diagram images as semantic SVG and editable PPTX shapes."
+  default_prompt: "Use $image2pptx to convert this diagram image into a semantic SVG and editable PPTX."
+  brand_color: "#2F64B7"
