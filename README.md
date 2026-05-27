@@ -4,31 +4,19 @@ Convert images, screenshots, and scientific figures into editable PowerPoint sli
 
 Semantic SVG reconstruction first. Native PPTX shapes second. Not a screenshot dropped onto a slide.
 
+[中文文档](README.zh-CN.md)
+
 ![GitHub Repo stars](https://img.shields.io/github/stars/BRCOO/image2pptx?style=social)
 ![Windows](https://img.shields.io/badge/platform-Windows-0078D4)
 ![PowerPoint](https://img.shields.io/badge/requires-PowerPoint-B7472A)
 
 ## Demo
 
-| Source image | PPTX preview |
-| --- | --- |
-| ![Dynamic graph source](examples/source/dynamic-graph.jpg) | ![Dynamic graph editable PPTX preview](examples/outputs/dynamic-graph-editable-preview.png)<br>Fully editable: 212 shapes, 68 text runs, 0 pictures. |
-| ![Fusion network source](examples/source/fusion-network.png) | ![Fusion network PPTX preview](examples/outputs/fusion-network-editable-preview.png)<br>Embedded SVG fallback for a dense full-page architecture figure. |
+![image2pptx demo preview](examples/outputs/dynamic-graph-editable-preview.png)
 
-Download the demo decks:
+The demo above is a PowerPoint preview exported from a reconstructed SVG. The generated deck contained 212 editable shapes, 68 text runs, and 0 embedded pictures.
 
-- [Dynamic graph editable PPTX](examples/outputs/dynamic-graph-editable.pptx)
-- [Fusion network embedded fallback PPTX](examples/outputs/fusion-network-embedded.pptx)
-
-The SVG reconstructions are also included:
-
-- [Dynamic graph SVG](examples/outputs/dynamic-graph.svg)
-- [Fusion network SVG](examples/outputs/fusion-network.svg)
-
-Editability reports:
-
-- [Dynamic graph report](examples/outputs/dynamic-graph-editability.json)
-- [Fusion network fallback report](examples/outputs/fusion-network-editability.json)
+To keep the repository fast to browse, demo `.pptx` files are generated locally and are not committed.
 
 ## Why image2pptx
 

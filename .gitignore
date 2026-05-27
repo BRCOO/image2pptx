@@ -2,7 +2,11 @@ out/
 dist/
 temp/
 tmp/
+*.pptx
 *.pdf
+examples/source/
+examples/outputs/*-svg-preview.png
+examples/outputs/fusion-network-*
 !.github/
 !references/
 !scripts/
