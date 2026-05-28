@@ -12,9 +12,9 @@ Semantic SVG reconstruction first. Native PPTX shapes second. Not a screenshot d
 
 ## Demo
 
-![image2pptx demo preview](examples/outputs/dynamic-graph-editable-preview.png)
+![image2pptx before and after comparison](examples/outputs/before-after-comparison.png)
 
-The demo above is a PowerPoint preview exported from a reconstructed SVG. The generated deck contained 212 editable shapes, 68 text runs, and 0 embedded pictures.
+The comparison above shows the source image on the left and a PowerPoint preview exported from the converted deck on the right. The generated deck contained 212 editable shapes, 68 text runs, and 0 embedded pictures.
 
 To keep the repository fast to browse, demo `.pptx` files are generated locally and are not committed.
 

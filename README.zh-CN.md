@@ -12,9 +12,9 @@
 
 ## 演示
 
-![image2pptx demo preview](examples/outputs/dynamic-graph-editable-preview.png)
+![image2pptx before and after comparison](examples/outputs/before-after-comparison.png)
 
-上面的图片是从转换后的 PowerPoint 导出的预览图。这个 demo 生成的 PPTX 包含 `212` 个可编辑形状、`68` 段文本、`0` 张嵌入图片。
+上面的图片展示了转换前后的对比：左侧是原始图片，右侧是转换后的 PowerPoint 导出预览图。这个 demo 生成的 PPTX 包含 `212` 个可编辑形状、`68` 段文本、`0` 张嵌入图片。
 
 为了让 GitHub 页面保持轻量，本仓库不提交 demo `.pptx` 文件。需要 PPTX 时在本地运行脚本生成即可。
 
