@@ -6,7 +6,10 @@ tmp/
 *.pdf
 examples/source/
 examples/outputs/*-svg-preview.png
-examples/outputs/fusion-network-*
+examples/outputs/fusion-network.svg
+examples/outputs/fusion-network-embedded.pptx
+examples/outputs/fusion-network-editable-preview.png
+examples/outputs/fusion-network-editability.json
 !.github/
 !references/
 !scripts/

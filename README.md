@@ -12,9 +12,17 @@ Semantic SVG reconstruction first. Native PPTX shapes second. Not a screenshot d
 
 ## Demo
 
+### Demo 1: Dynamic graph figure
+
 ![image2pptx before and after comparison](examples/outputs/before-after-comparison.png)
 
 The comparison above shows the source image on the left and a PowerPoint preview exported from the converted deck on the right. The generated deck contained 212 editable shapes, 68 text runs, and 0 embedded pictures.
+
+### Demo 2: Architecture figure
+
+![image2pptx architecture before and after comparison](examples/outputs/fusion-network-comparison.png)
+
+The second demo shows a denser architecture figure reconstructed into a PPT-style preview. The preview image is committed for lightweight browsing; generated `.pptx` files stay local.
 
 To keep the repository fast to browse, demo `.pptx` files are generated locally and are not committed.
 

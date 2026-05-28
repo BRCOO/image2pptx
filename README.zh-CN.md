@@ -12,9 +12,17 @@
 
 ## 演示
 
+### Demo 1：动态图论文图
+
 ![image2pptx before and after comparison](examples/outputs/before-after-comparison.png)
 
 上面的图片展示了转换前后的对比：左侧是原始图片，右侧是转换后的 PowerPoint 导出预览图。这个 demo 生成的 PPTX 包含 `212` 个可编辑形状、`68` 段文本、`0` 张嵌入图片。
+
+### Demo 2：架构图
+
+![image2pptx architecture before and after comparison](examples/outputs/fusion-network-comparison.png)
+
+第二个 demo 展示了更密集的架构图转换效果。仓库只提交预览 PNG，生成的 `.pptx` 文件保留在本地。
 
 为了让 GitHub 页面保持轻量，本仓库不提交 demo `.pptx` 文件。需要 PPTX 时在本地运行脚本生成即可。
 
